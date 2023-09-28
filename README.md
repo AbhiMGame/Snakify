@@ -11,6 +11,6 @@
 
 
 https://github.com/AbhiMGame/Snakify/assets/99332106/e190340a-d749-40e4-bbae-f96e11856d3a
-
-
-
+![Snakify cropped - frame at 0m0s](https://github.com/AbhiMGame/Snakify/assets/99332106/484dff55-10f1-4032-8966-4155342a9035)
+![Snakify cropped - frame at 0m3s](https://github.com/AbhiMGame/Snakify/assets/99332106/2855c3ea-9f32-4f8a-b6d2-24475f8ebb1d)
+![Snakify cropped - frame at 0m13s](https://github.com/AbhiMGame/Snakify/assets/99332106/163ff74f-58b6-4225-bdb4-946b7b8ebd3f)
