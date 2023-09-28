@@ -10,5 +10,6 @@ namespace SnakeGame
         public KeyCode left;
         public KeyCode right;
         public KeyCode down;
+        
     }
 }
