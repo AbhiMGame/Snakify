@@ -7,3 +7,10 @@
 - Mass Gainer → Which will increase the length of snake
 - Mass Burner → Which will decrease the length of snake
 - An enemy for both the snakes
+
+
+
+https://github.com/AbhiMGame/Snakify/assets/99332106/e190340a-d749-40e4-bbae-f96e11856d3a
+
+
+
