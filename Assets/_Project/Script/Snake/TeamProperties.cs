@@ -5,8 +5,9 @@ namespace SnakeGame
 {
     public enum Team
     {
-        Motu = 0,
-        Patlu = 1
+        Motu,
+        Patlu,
+        extra
     }
 
     [Serializable]
