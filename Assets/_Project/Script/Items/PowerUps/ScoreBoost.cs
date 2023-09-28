@@ -10,12 +10,12 @@ namespace SnakeGame.Item.PowerUp
 		public int boostMultiplier;
 		public override void UsePowerup(SnakeController snake)
 		{
-			Debug.Log("Score Boost Active");
+			Debug.Log("Score Boost Is Active");
 		}
 
 		public override void ResetPowerUp(SnakeController snake)
 		{
-			Debug.Log("Score Boost Ended");
+			Debug.Log("Score Boost Has Ended");
 		}
 	}
 }
