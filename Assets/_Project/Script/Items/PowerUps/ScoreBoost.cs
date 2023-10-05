@@ -7,7 +7,7 @@ namespace SnakeGame.Item.PowerUp
 {
     public class ScoreBoost : PowerUp
     {
-		public int boostMultiplier;
+		public int boostMultiplier { get; private set; }
 		public override void UsePowerup(SnakeController snake)
 		{
 			Debug.Log("Score Boost Is Active");

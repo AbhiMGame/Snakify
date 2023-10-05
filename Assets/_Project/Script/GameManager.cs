@@ -9,9 +9,9 @@ namespace SnakeGame
 		private static GameManager instance;
 		public static GameManager Instance { get { return instance; } }
 
-		public CoOpManager coOpManager;
+		[SerializeField] private CoOpManager coOpManager;
 		public ScoreController scoreController;
-		public UIController uiController;
+		[SerializeField] private UIController uiController;
 
 		private void Awake()
 		{
@@ -21,7 +21,8 @@ namespace SnakeGame
 				Destroy(instance);
 		}
 
-		public void GameOver(Team team, bool isSuicide)
+       
+        public void GameOver(Team team, bool isSuicide)
 		{
 			Time.timeScale = 0;
 			Debug.Log("Player Dead");

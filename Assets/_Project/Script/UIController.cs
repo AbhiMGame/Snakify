@@ -7,13 +7,13 @@ namespace SnakeGame
 {
     public class UIController : MonoBehaviour
     {
-        public Text motuScoreText;
-        public Text patluScoreText;
-        public Text WinText;
+        [SerializeField] private Text motuScoreText;
+        [SerializeField] private Text patluScoreText;
+        [SerializeField] private Text WinText;
 
-        public GameObject MainMenuPanel;
-        public GameObject GameOverPanel;
-        public GameObject ResumePanel;
+        [SerializeField] private GameObject MainMenuPanel;
+        [SerializeField] private GameObject GameOverPanel;
+        [SerializeField] private GameObject ResumePanel;
 
 		private void Start()
 		{
@@ -60,11 +60,11 @@ namespace SnakeGame
             if (isSuicide)
                 scores[(int)team] = -100000;
 
-            if(scores[(int)Team.Motu] == scores[(int)Team.Patlu])
-			{
-                WinText.text = "DRAW";
-                return;
-			}
+            //if(scores[(int)Team.Motu] == scores[(int)Team.Patlu])
+			//{
+           //     WinText.text = "DRAW";
+               // return;
+			//}
 
             string winTeam = (scores[(int)Team.Motu] > scores[(int)Team.Patlu]) ? "Motu" : "Patlu";
             WinText.text = $"{winTeam} WINS";

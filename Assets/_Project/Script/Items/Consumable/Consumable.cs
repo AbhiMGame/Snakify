@@ -4,7 +4,7 @@ namespace SnakeGame.Item.Consumbale
 {
     public abstract class Consumable : ItemController
     {
-		public int score;
+		public int score {get; private set; }
 		public abstract void Consume(SnakeController snake);
 		protected override void CollisionEffect(SnakeController snake)
 		{

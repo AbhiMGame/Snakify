@@ -6,7 +6,7 @@ namespace SnakeGame.Item.PowerUp
 {
     public abstract class PowerUp : ItemController
     {
-		public float usagePeriod;
+		[SerializeField] float usagePeriod;
 		private SpriteRenderer sprite;
 		private PolygonCollider2D col;
 

@@ -6,16 +6,18 @@ namespace SnakeGame
 	public class CoOpManager : MonoBehaviour
     {
         [Header("SnakePrefab")]
-        public SnakeController snakePrefab;
-        public Transform headCollection;
-        public Transform bodyCollection;
+        [SerializeField] private SnakeController snakePrefab;
+		[SerializeField] private Transform headCollection;
+		[SerializeField] Transform bodyCollection;
+		
 
-        [Header("Team Properties")]
+		[Header("Team Properties")]
         public TeamProperties[] teams;
+		
 
-        [Header("Snake Properties")]
-        public float speed;
-		public int initialBodyCount;
+		[Header("Snake Properties")]
+		[SerializeField] private float speed;
+		[SerializeField] private int initialBodyCount;
 
         private SnakeController[] snakes;
 

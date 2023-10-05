@@ -7,8 +7,9 @@ namespace SnakeGame.Snake
 {
 	public class SnakeController : MonoBehaviour
 	{
-		public Team team;
-		public float Speed { get; set; }
+		[field: SerializeField]
+		public Team team { get; private set; }
+		public float Speed;
 		public Color Color { get; private set; }
 		public SpriteRenderer sprite;
 
@@ -29,11 +30,11 @@ namespace SnakeGame.Snake
 		{
 			bounds = BoundController.bounds;
 			isShieldActive = true;
-			Invoke(nameof(SafeStart), 5f);
+			Invoke(nameof(SafeStart), 1f);
 		
 		}
 
-		public void SafeStart() => isShieldActive = false;
+		protected void SafeStart() => isShieldActive = false;
 
 		public void InitializeSnake(Team team, Color color, InputKeyConfig keyConfig, float speed, int initialBodyCount, Vector2 initalDirection, Transform bodyCollection)
 		{
@@ -132,16 +133,13 @@ namespace SnakeGame.Snake
 		}
 
 		
-		private void OnTriggerEnter2D(Collider2D collision)
+		private void OnTriggerEnter2D(Collider2D collider)
 		{
-			if (collision.TryGetComponent(out BodyController body) && !isShieldActive)
+			if (collider.TryGetComponent(out BodyController body)&& !isShieldActive)
 			{
 				Death(body.team == team);
 			}
-			else if (collision.gameObject.tag=="RandomEnemy")
-            {
-				Death(body.team == team);
-			}
+
 		}
 		public void Death(bool isSuicide)
 		{
