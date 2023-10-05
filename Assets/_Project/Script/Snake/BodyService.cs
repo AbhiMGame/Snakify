@@ -7,8 +7,8 @@ namespace SnakeGame.Snake
 	public class BodyService
 	{
 		public BodyController bodyPrefab;
-		public Transform BodyCollection { get; set; }
-		public int StartCount { get; set; }
+		public Transform BodyCollection { get; set;}
+		public int StartCount;
 
 		private List<BodyController> m_Bodies;
 		private List<BodyController> m_DeadBodies;

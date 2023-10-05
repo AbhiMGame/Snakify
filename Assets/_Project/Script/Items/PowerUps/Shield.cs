@@ -7,7 +7,7 @@ namespace SnakeGame.Item.PowerUp
 {
     public class Shield : PowerUp
     {
-		public SpriteRenderer shieldsprite;
+		[SerializeField] private SpriteRenderer shieldsprite;
 		public override void UsePowerup(SnakeController snake)
 		{
 			snake.isShieldActive = true;

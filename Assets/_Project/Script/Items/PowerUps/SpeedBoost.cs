@@ -8,7 +8,7 @@ namespace SnakeGame.Item.PowerUp
 {
     public class SpeedBoost : PowerUp
     {
-		public float speedMutiplier;
+		[SerializeField] private float speedMutiplier;
 		public override void UsePowerup(SnakeController snake)
 		{
 			snake.Speed *= speedMutiplier;
